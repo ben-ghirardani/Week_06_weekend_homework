@@ -8,7 +8,7 @@ public class FluteTest {
 
   @Before
   public void before() {
-    flute = new Flute("CuteFlute", "Silver", "Silver", 16);
+    flute = new Flute("CuteFlute", "Silver", "Silver", 16, 50, 100, "Flute");
   }
 
   @Test 
@@ -34,6 +34,16 @@ public class FluteTest {
   @Test
   public void canGetMaterial() {
     assertEquals("Silver", flute.getMaterial());
+  }
+
+  @Test
+  public void canCalculateMarkup() {
+    assertEquals(50, flute.calculateMarkup());
+  }
+
+  @Test
+  public void canGetType() {
+    assertEquals("Flute", flute.getType());
   }
 
 }

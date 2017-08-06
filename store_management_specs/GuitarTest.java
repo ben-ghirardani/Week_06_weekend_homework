@@ -8,7 +8,7 @@ public class GuitarTest {
 
   @Before
   public void before() {
-    guitar = new Guitar("The Ax", "Black and Red", "Wood", 6);
+    guitar = new Guitar("The Ax", "Black and Red", "Wood", 6, 75, 100, "Guitar");
   }
 
   @Test
@@ -34,6 +34,16 @@ public class GuitarTest {
   @Test
   public void canGetMaterial() {
     assertEquals("Wood", guitar.getMaterial());
+  }
+
+  @Test
+  public void canCalculateMarkup() {
+    assertEquals(25, guitar.calculateMarkup());
+  }
+
+  @Test
+  public void canGetType() {
+    assertEquals("Guitar", guitar.getType());
   }
 
 }
