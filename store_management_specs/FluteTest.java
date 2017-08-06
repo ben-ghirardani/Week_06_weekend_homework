@@ -8,7 +8,7 @@ public class FluteTest {
 
   @Before
   public void before() {
-    flute = new Flute("CuteFlute", "Silver", "Silver", 16, 50, 100, "Flute");
+    flute = new Flute("FluteMaster 5000", "Silver", "Silver", 16, 50, 100, "Flute");
   }
 
   @Test 
@@ -23,7 +23,7 @@ public class FluteTest {
 
   @Test
   public void canGetName() {
-    assertEquals("CuteFlute", flute.getName());
+    assertEquals("FluteMaster 5000", flute.getName());
   }
 
   @Test
